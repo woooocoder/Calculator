@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background:  #efeff2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    position: absolute;
+    z-index: 0;
+
+}
+
+.calculator {
+    width: 300px;
+    height: 500px;
+    box-shadow: 4px 4px 30px black;
+    border-radius: 12px;
+    background: black;
+    overflow: hidden;
+}
+
+form input {
+    width: 100%;
+    height: 150px;
+    border: none;
+    border-radius: 12px;
+    font-size: 2rem;
+    padding: 1;
+    color: white;
+    background: black;
+    text-align: right;
+    pointer-events: none;
+    
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+button {
+    flex: 0 0 22%;
+    margin: 5px 0;
+    border: 1px solid black;
+    width: 60px;
+    height: 52px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 100px; /*5px*/
+    cursor: pointer;
+    font: 'sans';
+}
+
+.btn-yellow {
+    background: rgb(255, 144, 47);
+    color: white;
+}
+
+.btn-grey {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn-equal {
+    background: rgb(245, 146, 62);
+    color: white;
+}
+
+.btn-clear {
+    background: rgb(168, 168, 168);
+    color: black;
+}
+
+.btn-negate {
+    background: rgb(168, 168, 168);
+    color: black;
+}
+
+.btn-zero {
+    width: 220px;
+    color: white;
+    background: rgb(39, 39, 39);
+    height: 52px;
+    padding: 25px 55px;
+    text-justify: auto;
+
+}
+
+.btn-mod {
+    background: rgb(168, 168, 168);
+    color: black;
+}
+
