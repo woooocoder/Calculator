@@ -6,7 +6,7 @@
 
 body {
     min-height: 100vh;
-    background:  #efeff2;
+    background:  rgb(194, 155, 155);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,10 +19,15 @@ body {
 .calculator {
     width: 300px;
     height: 500px;
+    position: absolute;
     box-shadow: 4px 4px 30px black;
+    margin-left: 900px;
     border-radius: 12px;
     background: black;
     overflow: hidden;
+    
+
+    
 }
 
 form input {
@@ -79,23 +84,41 @@ button {
     color: black;
 }
 
+
 .btn-negate {
     background: rgb(168, 168, 168);
     color: black;
 }
 
-.btn-zero {
-    width: 220px;
+#zero {
+    flex: 0 0 22%;
+    margin: 5px 0;
+    width: 120px;
+    height: 52px;
     color: white;
     background: rgb(39, 39, 39);
-    height: 52px;
+    border: 1px solid black;
     padding: 25px 55px;
-    text-justify: auto;
 
+    
+}
+
+#zero:hover {
+    color: black;
+    border: 1px solid white;
+    transform: translateY(-5px);
+}
+
+button:hover {
+    color: black;
+    border: 1px solid white;
+}
+
+.acNegate:hover {
+    color: white;
 }
 
 .btn-mod {
     background: rgb(168, 168, 168);
     color: black;
 }
-
